@@ -17,7 +17,7 @@ GOOGLE_CSE_ID = os.getenv("GOOGLE_CSE_ID")
 OPENAI_API_BASE = os.getenv("OPENAI_API_BASE")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-st.set_page_config(page_title="Interweb Explorer", page_icon="🌐")
+st.set_page_config(page_title="Bavaria AI Explorer", page_icon="🌐")
 
 def settings():
 
@@ -74,9 +74,9 @@ class PrintRetrievalHandler(BaseCallbackHandler):
             self.container.text(doc.page_content)
 
 
-st.sidebar.image("img/ai.png")
-st.header("`Interweb Explorer`")
-st.info("`I am an AI that can answer questions by exploring, reading, and summarizing web pages."
+#st.sidebar.image("img/ai.png")
+st.header("`Bavaia AI Explorer`")
+st.info("`I am an AI that can answer questions by exploring, reading, and summarizing Bavarian Unversities web pages."
     "I can be configured to use different modes: public API or private (no data sharing).`")
 
 # Make retriever and llm
